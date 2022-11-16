@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Forms</h1>
+
+        <form>
+            <!--text inputs-->
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <!--prevent etering data inside the input field [disabled]-->
+
+            <input type="text" placeholder="Enter your name" disabled id="name" name="name" value="dimitar">
+
+
+        </form>
+
+        <!--password-->
+        <form>
+            <label for="password">Password:</label>
+            <input type="password" name="pass" id="password" placeholder="Password">
+
+            <!--comment-->
+            <br>
+            <br>
+            <label for="comment">Your comment</label>
+            <textarea name="" id="comment" cols="25" rows="5"></textarea>
+        </form>
+
+        <!--radio button-->
+        <form>
+            <p>Choose ypur favourite type of music</p>
+            <input type="radio" name="genre" id="rock">
+            <label for="rock">Rock</label>
+            <br>
+            <input type="radio" name="genre" id="pop">
+            <label for="pop">POP</label>
+            <br>
+            <input type="radio" name="genre" id="jazz">
+            <label for="jazz">Jazz</label>
+
+            <!--Checkbox-->
+            <p>Select your music service</p>
+            <input type="checkbox" name="service" id="itunes">
+            <label for="itunes">itunes</label>
+
+            <input checked type="checkbox" name="service" id="spotify">
+            <label for="spotify">Spotify</label>
+
+            <br>
+            <br>
+            <!--Dropdown/select list box-->
+            <label for="cities">Cities</label>
+            <select id="cities">
+                <option value="sk">Skopje</option>
+                <option value="ve">Veles</option>
+                <option value="bi">Bitola</option>
+                <option value="sr">Strumica</option>
+                <option selected value="ka">Kavadarci</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Dropdown/select list box - multiple-->
+            <label for="multi-cities">multiple-Cities</label>
+            <select id="cities" multiple size="3">
+                <option value="sk">Skopje</option>
+                <option value="ve">Veles</option>
+                <option value="bi">Bitola</option>
+                <option value="sr">Strumica</option>
+                <option selected value="ka">Kavadarci</option>
+            </select>
+
+            <br>
+            <br>
+            <!--Fille input-->
+            <label for="profile-image">Upload your image:</label>
+            <input type="file" id="profile-image">
+
+            <!--HTML5 inputs-->
+            <br>
+
+            <input type="email" id="email" placeholder="Enter your email here">
+
+            <input type="date">
+
+            <input type="hidden">
+
+
+
+            <!--submit button-->
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset button">
+
+
+
+
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <!--fieldset-->
+
+        <form>
+            <fieldset>
+                <legend>Contact details:</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email" >Email:</label>
+                <input type="email" required>
+                <input type="submit">
+
+            </fieldset>
+        </form>
+
+        
+    </body>
+</html>
